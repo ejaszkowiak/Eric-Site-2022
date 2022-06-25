@@ -1,0 +1,11 @@
+@import '_variables';
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    // 768
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+}
+
