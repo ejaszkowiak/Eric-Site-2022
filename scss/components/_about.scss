@@ -1,2 +1,51 @@
 @import '../abstracts/all.scss';
 
+.about-container {
+    max-width: 1080px;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    width: 100vw;
+    height: 75vh;
+    margin: auto;
+  .about-text {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    /* align-items: center; */
+    & h1 {
+      color: $text-dark;
+      font-size: 5em;
+      align-self: center;
+      padding: 100px;
+    }
+    & p {
+      color: $text-dark;
+      font-size: 1.8em;
+      font-weight: 300;
+      padding: 100px;
+      align-self: center;
+      max-width: 700px;
+    }
+    & .fancy-rectangle {
+      width: 70px;
+      border-radius: 5px;
+      overflow: hidden;
+      background: $accent-1;
+      z-index: 2;
+    }
+  }
+  & .button-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    & button {
+      position: absolute;
+      font-size: 2.5em;
+      padding: 10px 20px;
+      background-color: $accent-1;
+      border-radius: 20px;
+      color: $bg-color;
+    }
+  }
+}
