@@ -1,5 +1,6 @@
 import Hero from "./components/hero";
 import About from "./components/about";
+import Trapezoid from "./components/trapezoid";
 import "./styles/core/all.css"
 
 function App() {
@@ -7,6 +8,8 @@ function App() {
     <div className="app">
       <Hero />
       <About />
+      <Trapezoid text='Experience' upper={true}/>
+      <Trapezoid text='Contact' upper={false}/>
     </div>
   );
 }
