@@ -1,0 +1,96 @@
+@import '../abstracts/all.scss';
+
+.project-card-container {
+  max-width: 1000px;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  & .left-project-card {
+    margin: auto;
+    width: 100%;
+    & p {
+      color: $text-dark;
+      font-size: 1.5em;
+      font-weight: 300;
+      padding: 70px 50px 0px 50px;
+      align-self: center;
+      max-width: 700px;
+    }
+  }
+  & .right-project-card-image-group {
+    margin: auto;
+    padding: 50px;
+    width: 100%;
+    & p {
+      color: $text-dark;
+      font-size: 1.5em;
+      font-weight: 300;
+      padding: 70px 50px 0px 50px;
+      align-self: center;
+      max-width: 700px;
+    }
+  }
+  & .right-project-card {
+    margin: auto;
+    width: 100%;
+    & p {
+      color: $text-dark;
+      font-size: 1.5em;
+      font-weight: 300;
+      padding: 70px 50px 0px 50px;
+      align-self: center;
+      max-width: 700px;
+    }
+  }
+  & h2 {
+    color: $accent-1;
+    font-size: 2.4em;
+    font-weight: 300;
+    padding: 40px 20px;
+    align-self: center;
+    // TODO: text-align: center;
+    text-align: left;
+    max-width: 700px;
+  }
+  
+  & .fancy-rectangle {
+    margin: auto;
+    width: 20px;
+    height: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: $accent-1;
+    z-index: 2;
+  }
+  .project-logo {
+    max-width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    align-self: center;
+    justify-self: center;
+  }
+  .project-image {
+    margin: auto;
+    max-width: 400px;
+    border-radius: 20px;
+    align-self: center;
+    justify-self: center;
+  }
+& .button-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    & button {
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 100px;
+      font-size: 2.5em;
+      padding: 10px 20px;
+      background-color: $accent-1;
+      border-radius: 20px;
+      color: $bg-color;
+    }
+  }
+}
