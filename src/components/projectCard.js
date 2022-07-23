@@ -33,7 +33,6 @@ export default function ProjectCard(props) {
         <h2>{props.role}</h2>
         <img className='project-image' src={props.image} alt="Project" />
       </div>
-
       </>
     }
     </div>

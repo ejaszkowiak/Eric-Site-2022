@@ -1,7 +1,8 @@
 @import '../abstracts/all.scss';
 
 .project-card-container {
-  max-width: 1000px;
+  overflow: hidden;
+  max-width: 1080px;
   padding: 50px 0;
   display: flex;
   flex-direction: row;

@@ -1,0 +1,48 @@
+@import '../abstracts/all.scss';
+
+.contact-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: $accent-1;
+  margin: auto;
+  & h2 {
+    font-size: 3em;
+    text-align: center;
+    padding: 40px;
+  }
+  & .button-container {
+    margin: auto;
+    width: 100%;
+      text-align: center;
+    padding: 20px;
+    & a {
+      margin: auto;
+      background-color: $bg-color;
+      padding: 12px 25px;
+      border-radius: 15px;
+      font-size: 2.5em;
+      color: $text-dark;
+    }
+  }
+  & .links {
+    padding: 40px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    & a {
+      padding: 0 20px;
+    }
+  }
+  & .credit {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 40px;
+    & a {
+      font-size: 1em;
+    }
+    & i {
+      font-size: 0.8em;
+    }
+  }
+} 

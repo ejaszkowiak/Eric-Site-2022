@@ -6,6 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap&family=JetBrains+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap&family=JetBrains+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap&family=JetBrains+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=JetBrains+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=JetBrains+Mono&display=swap");
 .hero-container {
   width: 100vw;
   height: 100vh;
@@ -155,7 +157,7 @@ button:hover .button-text {
   max-width: 1080px;
   padding-top: 20vh;
   padding-bottom: 20vh;
-  width: 100vw;
+  width: 100%;
   height: 75vh;
   margin: auto auto 200px auto; }
   .about-container .about-text {
@@ -199,7 +201,8 @@ button:hover .button-text {
 
 .trap-container {
   display: grid;
-  width: 100vw; }
+  width: 100%;
+  overflow: hidden; }
   .trap-container .upperText {
     margin-top: 5%; }
   .trap-container .lowerText {
@@ -221,7 +224,8 @@ button:hover .button-text {
     transform: rotate(180deg); }
 
 .project-card-container {
-  max-width: 1000px;
+  overflow: hidden;
+  max-width: 1080px;
   padding: 50px 0;
   display: flex;
   flex-direction: row;
@@ -299,3 +303,41 @@ button:hover .button-text {
       background-color: #67BAB6;
       border-radius: 20px;
       color: #efefef; }
+
+.contact-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #67BAB6;
+  margin: auto; }
+  .contact-container h2 {
+    font-size: 3em;
+    text-align: center;
+    padding: 40px; }
+  .contact-container .button-container {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 20px; }
+    .contact-container .button-container a {
+      margin: auto;
+      background-color: #efefef;
+      padding: 12px 25px;
+      border-radius: 15px;
+      font-size: 2.5em;
+      color: #000; }
+  .contact-container .links {
+    padding: 40px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex; }
+    .contact-container .links a {
+      padding: 0 20px; }
+  .contact-container .credit {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 40px; }
+    .contact-container .credit a {
+      font-size: 1em; }
+    .contact-container .credit i {
+      font-size: 0.8em; }

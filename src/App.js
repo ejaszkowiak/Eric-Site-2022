@@ -2,6 +2,7 @@ import Hero from "./components/hero";
 import About from "./components/about";
 import Trapezoid from "./components/trapezoid";
 import ProjectCard from "./components/projectCard";
+import Contact from "./components/contact";
 import "./styles/core/all.css"
 import JobyLogo from "./components/assets/joby-logo.png"
 import VolvoLogo from "./components/assets/volvo-logo.png"
@@ -34,6 +35,7 @@ Equipment designed in SolidWorks and Catia, working in tandem with fellow engine
         reverse={true}
       />
       <Trapezoid text='Contact' upper={false}/>
+      <Contact />
     </div>
   );
 }
