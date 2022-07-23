@@ -412,7 +412,8 @@ button:hover .button-text {
     .contact-container .credit a {
       font-size: 1em; }
     .contact-container .credit i {
-      font-size: 0.8em; }
+      font-size: 0.8em;
+      padding-right: 8px; }
 
 .header-container {
   width: 100%;
