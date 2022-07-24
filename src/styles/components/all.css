@@ -14,6 +14,9 @@
   /* background-repeat: no-repeat; */
   /* background-image: url("/assets/WebMainPic.jpg"); */
   /* background-size: cover; */ }
+  @media screen and (max-width: 500px) {
+    .hero-container {
+      height: 50vh; } }
   .hero-container .hero-text {
     left: 50%;
     transform: translateX(-50%);
@@ -22,16 +25,36 @@
     margin-right: auto;
     text-align: center;
     color: #fff; }
+    @media screen and (max-width: 500px) {
+      .hero-container .hero-text {
+        width: 100%;
+        margin-left: 0;
+        font-size: 1.6em;
+        text-align: left; } }
     .hero-container .hero-text h2 {
       padding-top: 20px;
       padding-bottom: 5px;
       text-align: center;
       color: #fff;
       z-index: 3; }
+      @media screen and (max-width: 500px) {
+        .hero-container .hero-text h2 {
+          width: 100%;
+          padding-top: 10px;
+          font-size: 1.3em;
+          text-align: center;
+          font-weight: 400;
+          padding-bottom: 0; } }
     .hero-container .hero-text h3 {
       z-index: 3;
       text-align: center;
       color: #fff; }
+      @media screen and (max-width: 500px) {
+        .hero-container .hero-text h3 {
+          width: 100%;
+          font-size: 0.8em;
+          text-align: center;
+          font-weight: 400; } }
   .hero-container .hero-header ul {
     width: 100%;
     list-style: none;
@@ -40,6 +63,9 @@
     justify-self: center;
     position: absolute;
     bottom: 30px; }
+    @media screen and (max-width: 500px) {
+      .hero-container .hero-header ul {
+        display: none; } }
     .hero-container .hero-header ul a {
       padding: 20px 50px; }
   .hero-container .video-container {
@@ -47,17 +73,31 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     overflow: hidden; }
+    @media screen and (max-width: 500px) {
+      .hero-container .video-container {
+        height: 50vh;
+        width: 100%;
+        font-size: 1em;
+        text-align: center;
+        font-weight: 400; } }
     .hero-container .video-container video {
       object-fit: cover;
       z-index: 0;
       position: absolute;
-      top: 50%;
+      top: 25%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 100vw;
-      height: 100%; }
+      height: 100vh; }
+      @media screen and (max-width: 500px) {
+        .hero-container .video-container video {
+          top: 50%;
+          height: 50vh;
+          font-size: 1em;
+          text-align: center;
+          font-weight: 400; } }
 
 /* Fun Buttons */
 #container {

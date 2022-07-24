@@ -10,3 +10,17 @@ $spacing-md: 16px;
 $spacing-lg: 32px;
 
 $border-radius: 12px;
+
+$small: 300px;
+$medium: 500px;
+
+// NOTE: Example
+// .smth {
+//   //some CSS
+//   @media screen and (max-width: $small) {
+//     //do Smth
+//   }
+//   @media screen and (min-width: $medium) {
+//     //do Smth
+//   }
+// }
