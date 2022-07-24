@@ -7,17 +7,33 @@
   width: 100%;
   height: 75vh;
   margin: auto auto 200px auto;
+  @media screen and (max-width: $medium) {
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+  }
   .about-text {
     display: flex;
     flex-direction: row;
     margin: auto;
     justify-content: center;
+    @media screen and (max-width: $medium) {
+      flex-direction: column;
+      height: 50vh;
+    }
     /* align-items: center; */
     & h1 {
       color: $text-dark;
       font-size: 5em;
       align-self: center;
       padding: 100px;
+      @media screen and (max-width: $medium) {
+        font-size: 3.5em;
+        text-align: center;
+        width: 100%;
+        padding: 50px 0 0 0;
+        margin-top: -100px;
+      }
     }
     & p {
       color: $text-dark;
@@ -26,6 +42,11 @@
       padding: 100px;
       align-self: center;
       max-width: 700px;
+      @media screen and (max-width: $medium) {
+        font-size: 1.2em;
+        padding: 40px;
+        width: 100%;
+      }
     }
     & .fancy-rectangle {
       width: 70px;
@@ -39,6 +60,9 @@
     width: 100%;
     height: 100%;
     justify-content: center;
+    @media screen and (max-width: $medium) {
+      margin: 0;
+    }
     & button {
       position: absolute;
       left: 50%;
@@ -49,6 +73,13 @@
       background-color: $accent-1;
       border-radius: 20px;
       color: $bg-color;
+      @media screen and (max-width: $medium) {
+        position: relative;
+      border-radius: 15px;
+      font-size: 2em;
+      margin-top: -150px;
+        padding: 8px 12px;
+      }
     }
   }
 }

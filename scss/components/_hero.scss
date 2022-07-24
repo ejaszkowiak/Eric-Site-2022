@@ -91,6 +91,7 @@
       width: 100vw;
       height: 100vh;
       @media screen and (max-width: $medium) {
+        position: relative;
         top: 50%;
         height: 50vh;
         font-size: 1em;
