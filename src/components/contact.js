@@ -12,7 +12,7 @@ export default function Contact() {
         <a href="https://www.linkedin.com/in/eric-jaszkowiak/"><i class="fa-brands fa-linkedin-in"></i></a>
        <a href="https://github.com/ejaszkowiak"><i class="fa-brands fa-github"></i></a>
       </div>
-      <p className='credit'>Made with <a href="https://github.com/domogami"><i class="fa-solid fa-heart"/></a>  by <a href="https://dominicklee.net">Dom</a></p>
+      <p className='credit'>Made with <a href="https://github.com/domogami"><i class="fa-solid fa-coffee"/></a>  by <a href="https://dominicklee.net">Dom</a></p>
     </div>
   )
 }
