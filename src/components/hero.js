@@ -19,13 +19,16 @@ export default function Hero() {
   useEffect(() => {
     window.addEventListener("resize", handleResize)
   })
+  // <img src={EricTesseractGIF} alt="Eric"/> 
   return (
     <div className='hero-container'>
       <div className='video-container'>
         {isMobile ?
-        <img src={EricTesseractGIF} alt="Eric"/>
+        <video autostart autoPlay muted loop playsinline id="myVideo">
+          <source src={EricTesseract} type="video/webm" />
+        </video>
         :
-          <video autostart autoPlay muted loop disablePictureInPicture="true" id="myVideo">
+          <video autostart autoPlay muted loop playsinline id="myVideo">
           <source src={EricTesseract} type="video/webm" />
         </video>
         }
