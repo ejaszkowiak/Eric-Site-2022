@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/components/all.css"
-import EricTesseract from "../assets/EricTesseract.webm"
+import EricTesseract from "../assets/EricTesseract.mp4"
 
 export default function Hero() {
   return (
