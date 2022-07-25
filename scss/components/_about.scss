@@ -26,10 +26,12 @@
       color: $text-dark;
       font-size: 5em;
       align-self: center;
+      text-align: center;
+white-space: nowrap;
       padding: 100px;
       @media screen and (max-width: $medium) {
-        font-size: 2.5em;
-        font-weight: 100;
+        font-size: 3.5em;
+        font-weight: 200;
         text-align: center;
         width: 100%;
         padding: 50px 0 0 0;
