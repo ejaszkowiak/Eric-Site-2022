@@ -7,6 +7,7 @@ import "./styles/core/all.css"
 import JobyLogo from "./components/assets/joby-logo.png"
 import VolvoLogo from "./components/assets/volvo-logo.png"
 import JobyImg from "./components/assets/Joby Pics/IMG_0724.jpg"
+import VolvoImg from "./assets/Volvo.png"
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Trapezoid text='Experience' upper={true}/>
       <ProjectCard 
         logo={VolvoLogo}
-        image={JobyImg}
+        image={VolvoImg}
         role="Test Engineering Intern"
         text="Test Engineering Intern in during summer 2022. Performed tests on electric vehicle prototype and diesel compactors. Designed Solar energy solutions for EV’s.
 
