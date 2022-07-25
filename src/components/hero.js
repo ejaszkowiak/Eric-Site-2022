@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "../styles/components/all.css"
 import EricTesseract from "../assets/EricTesseract.mp4"
-// import EricTesseractGIF from "../assets/EricTesseract.gif"
+import EricTesseractGIF from "../assets/EricTesseract.gif"
 
 export default function Hero() {
   const [isMobile, setIsMobile] = useState(false)
@@ -19,14 +19,11 @@ export default function Hero() {
   useEffect(() => {
     window.addEventListener("resize", handleResize)
   })
-  // <img src={EricTesseractGIF} alt="Eric"/> 
   return (
     <div className='hero-container'>
       <div className='video-container'>
         {isMobile ?
-        <video autostart autoPlay muted loop playsinline id="myVideo">
-          <source src={EricTesseract} type="video/webm" />
-        </video>
+         <img src={EricTesseractGIF} alt="Eric"/>
         :
           <video autostart autoPlay muted loop playsinline id="myVideo">
           <source src={EricTesseract} type="video/webm" />
