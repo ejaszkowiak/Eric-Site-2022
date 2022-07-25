@@ -41,7 +41,7 @@
     & a {
       font-size: 1em;
     }
-    & i {
+    & a:nth-child(1) {
       font-size: 0.8em;
       padding-right: 8px;
     }

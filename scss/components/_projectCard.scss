@@ -21,6 +21,11 @@
       padding: 70px 50px 0px 50px;
       align-self: center;
       max-width: 700px;
+      @media screen and (max-width: $medium) {
+        font-size: 1.2em; 
+        padding: 10%;
+        text-align: left;
+      }
     }
   }
   & .right-project-card-image-group {
@@ -35,6 +40,11 @@
       padding: 70px 50px 0px 50px;
       align-self: center;
       max-width: 700px;
+      @media screen and (max-width: $medium) {
+        font-size: 1.2em; 
+        padding: 10%;
+        text-align: left;
+      }
     }
   }
   & .right-project-card {
@@ -47,6 +57,11 @@
       padding: 70px 50px 0px 50px;
       align-self: center;
       max-width: 700px;
+      @media screen and (max-width: $medium) {
+        font-size: 1.2em; 
+        padding: 10%;
+        text-align: left;
+      }
     }
   }
   & h2 {
@@ -58,6 +73,11 @@
     // TODO: text-align: center;
     text-align: left;
     max-width: 700px;
+    @media screen and (max-width: $medium) {
+      font-size: 1.5em; 
+      text-align: center;
+      padding: 0px 20px 20px 20px;
+    }
   }
   
   & .fancy-rectangle {
@@ -78,6 +98,9 @@
     border-radius: 20px;
     align-self: center;
     justify-self: center;
+    @media screen and (max-width: $medium) {
+      width: 100%; 
+    }
   }
 
   .project-image-container {
@@ -112,6 +135,12 @@
       background-color: $accent-1;
       border-radius: 20px;
       color: $bg-color;
+      @media screen and (max-width: $medium) {
+        margin-top: 0; 
+      font-size: 2em;
+        padding: 5 10px;
+      }
     }
+
   }
 }
