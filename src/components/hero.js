@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "../styles/components/all.css"
 import EricTesseract from "../assets/EricTesseract.mp4"
-import EricTesseractGIF from "../assets/EricTesseract.gif"
+// import EricTesseractGIF from "../assets/EricTesseract.gif"
 
 export default function Hero() {
   const [isMobile, setIsMobile] = useState(false)
