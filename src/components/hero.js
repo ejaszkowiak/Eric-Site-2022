@@ -24,7 +24,8 @@ export default function Hero() {
       <div className='video-container'>
         {isMobile ?
         <img src={EricTesseractGIF} alt="Eric"/>
-        :<video controls="false" autostart autoPlay muted loop playsinline="true" disablePictureInPicture="true" id="myVideo">
+        :
+          <video autostart autoPlay muted loop disablePictureInPicture="true" id="myVideo">
           <source src={EricTesseract} type="video/webm" />
         </video>
         }

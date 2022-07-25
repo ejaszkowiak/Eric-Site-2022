@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/components/all.css"
-import trap from '../assets/trapezoid.png'
+import trap from '../assets/trapezoid2.png'
 
 export default function Trapezoid(props) {
   return (
