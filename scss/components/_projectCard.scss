@@ -8,6 +8,9 @@
   flex-direction: row;
   margin: auto;
   justify-content: center;
+  @media screen and (max-width: $medium) {
+    flex-direction: column;
+  }
   & .left-project-card {
     margin: auto;
     width: 100%;
@@ -24,6 +27,7 @@
     margin: auto;
     padding: 50px;
     width: 100%;
+    
     & p {
       color: $text-dark;
       font-size: 1.5em;
@@ -64,6 +68,9 @@
     overflow: hidden;
     background: $accent-1;
     z-index: 2;
+    @media screen and (max-width: $medium) {
+      display: none;
+    }
   }
   .project-logo {
     max-width: 400px;
@@ -72,13 +79,26 @@
     align-self: center;
     justify-self: center;
   }
-  .project-image {
+
+  .project-image-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     margin: auto;
-    max-width: 400px;
-    border-radius: 20px;
-    align-self: center;
-    justify-self: center;
+    & .project-image {
+      margin: auto;
+      max-width: 400px;
+      border-radius: 20px;
+      align-self: center;
+      justify-self: center;
+      @media screen and (max-width: $medium) {
+        width: 90%;
+        margin: 0 5%;
+        border-radius: 20px;
+      }
+    }
   }
+  
 & .button-container {
     width: 100%;
     height: 100%;

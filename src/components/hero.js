@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <div className='hero-container'>
       <div className='video-container'>
-        <video autostart autoPlay muted loop id="myVideo">
+        <video controls="false" autostart autoPlay muted loop playsinline="true" disablePictureInPicture="true" id="myVideo">
           <source src={EricTesseract} type="video/webm" />
         </video>
       </div>
