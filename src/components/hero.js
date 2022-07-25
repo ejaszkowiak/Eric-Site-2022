@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import "../styles/components/all.css"
 import EricTesseract from "../assets/EricTesseract.mp4"
+import EricTesseractGIF from "../assets/EricTesseract.gif"
 
 export default function Hero() {
+  const [isMobile, setIsMobile] = useState(false)
+   
+  //choose the screen size 
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+        setIsMobile(true)
+    } else {
+        setIsMobile(false)
+    }
+  }
+
+  // create an event listener
+  useEffect(() => {
+    window.addEventListener("resize", handleResize)
+  })
   return (
     <div className='hero-container'>
       <div className='video-container'>
-        <video controls="false" autostart autoPlay muted loop playsinline="true" disablePictureInPicture="true" id="myVideo">
+        {isMobile ?
+        <img src={EricTesseractGIF} alt="Eric"/>
+        :<video controls="false" autostart autoPlay muted loop playsinline="true" disablePictureInPicture="true" id="myVideo">
           <source src={EricTesseract} type="video/webm" />
         </video>
+        }
       </div>
       <div className="hero-text">
         <h2>Eric Jaszkowiak</h2>
