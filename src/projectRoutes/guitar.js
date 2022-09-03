@@ -11,10 +11,10 @@ import '../styles/components/all.css';
 export default function Guitar() {
   return (
     <div className='guitar-container'>
-      <a href='/'>
+      <a href='/assorted_projects'>
         <img className='left-arrow' src={arrow} alt='left-arrow' />
       </a>
-      <a href='/'>
+      <a href='/robot'>
         <img className='right-arrow' src={arrow} alt='right-arrow' />
       </a>
       <Trapezoid text='Epoxy River Guitar' upper={true} />
