@@ -1,0 +1,59 @@
+@import '../abstracts/all.scss';
+
+.left-arrow {
+  position: fixed;
+  left: 2%;
+  top: 50%;
+}
+.right-arrow {
+  position: fixed;
+  transform: rotate(180deg);
+  right: 2%;
+  top: 50%;
+}
+.guitar-container {
+  & .guitar-grid {
+    max-width: 1080px;
+    padding: 0;
+    margin: -100px auto auto auto;
+    display: grid;
+
+    // grid-template-columns: minmax(200px, 500px) minmax(200px, 500px);
+    // grid-template-columns: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: minmax(400px, auto-fit) minmax(400px, auto-fill);
+    // grid-template-rows: repeat(auto);
+    & p {
+      padding: 30px;
+      font-weight: 100;
+      font-size: 30px;
+      line-height: 1.3;
+      color: $text-dark;
+      height: auto;
+      margin: auto;
+    }
+    & img {
+      padding: 50px;
+      width: 100%;
+      border-radius: 5em;
+      height: auto;
+      margin: auto;
+    }
+    & .img1 {
+      object-fit: cover;
+      max-height: 70%;
+      width: 100%;
+    }
+
+    & .img2 {
+      margin-top: -100px;
+    }
+    & .p2 {
+      margin-top: -100px;
+    }
+  }
+  & .last-grid-item {
+    margin-top: -50px;
+    grid-template-rows: auto;
+  }
+}

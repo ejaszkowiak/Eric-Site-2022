@@ -27,7 +27,7 @@
       font-size: 5em;
       align-self: center;
       text-align: center;
-white-space: nowrap;
+      white-space: nowrap;
       padding: 100px;
       @media screen and (max-width: $medium) {
         font-size: 3.5em;
@@ -79,9 +79,9 @@ white-space: nowrap;
       color: $bg-color;
       @media screen and (max-width: $medium) {
         position: relative;
-      border-radius: 15px;
-      font-size: 2em;
-      margin-top: -150px;
+        border-radius: 15px;
+        font-size: 2em;
+        margin-top: -150px;
         padding: 8px 12px;
       }
     }

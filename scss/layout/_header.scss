@@ -33,11 +33,11 @@
     font-size: 2em;
     padding: 0 20px;
     text-decoration: none;
-      color: $text-light;
+    color: $text-light;
   }
 }
 .active a {
-    color: $text-light;
+  color: $text-light;
 }
 .menu-btn {
   margin: 0;
@@ -53,7 +53,7 @@
 .menu-btn__burger {
   width: 30px;
   height: 4px;
-    background: $bg-color;
+  background: $bg-color;
 
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
@@ -64,7 +64,7 @@
   position: absolute;
   width: 30px;
   height: 4px;
-    background: $bg-color;
+  background: $bg-color;
 
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
