@@ -144,7 +144,7 @@ a {
     @media screen and (max-width: 500px) {
       .hero-container .hero-header ul {
         height: auto;
-        top: 45%;
+        top: 50%;
         margin: auto;
         padding-left: 0; } }
     .hero-container .hero-header ul a {
