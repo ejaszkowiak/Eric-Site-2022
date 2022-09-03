@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/components/all.css';
-
+import resume from '../assets/Eric_Jaszkowiak_Resume.pdf'
 export default function About() {
   return (
     <div className='about-container'>
@@ -15,7 +15,7 @@ export default function About() {
         </p>
       </div>
       <div className='button-container'>
-        <button>R&eacute;sum&eacute;</button>
+        <a href={resume} download>R&eacute;sum&eacute;</a>
       </div>
     </div>
   );

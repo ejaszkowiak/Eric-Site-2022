@@ -52,7 +52,10 @@
   & .hero-header {
     & ul {
       @media screen and (max-width: $medium) {
-        display: none;
+        // display: none;
+       height: 51vh; 
+        margin: auto;
+        padding-left: 0;
       }
       width: 100%;
       list-style: none;
@@ -63,6 +66,10 @@
       bottom: 30px;
       & a {
         padding: 20px 50px;
+        @media screen and (max-width: $medium) {
+          padding: 10px 15px;
+          font-size: 1.3em;
+        }
       }
     }
   }
