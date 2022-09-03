@@ -28,25 +28,23 @@
       object-fit: cover;
       width: 100%;
     }
-    
   }
   & .last-grid-item {
     display: grid;
     & .img2 {
-     grid-column: 1; 
-     grid-row: 1;
+      grid-column: 1;
+      grid-row: 1;
       max-height: 80%;
       max-width: 80%;
-     transform: translate(-80px, 100px);
+      transform: translate(-80px, 100px);
       z-index: 2;
-
     }
     & .img3 {
-     grid-column: 1; 
-     grid-row: 1; 
+      grid-column: 1;
+      grid-row: 1;
       max-height: 80%;
       max-width: 80%;
-     transform: translate(170px, -100px);
+      transform: translate(170px, -100px);
     }
     margin-top: -50px;
   }

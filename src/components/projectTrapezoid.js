@@ -20,7 +20,7 @@ export default function ProjectTrapezoid(props) {
                 <a className='homeIcon' href='/'>
                   <FontAwesomeIcon icon={faHouse} />
                 </a>
-              <h3>Home</h3>
+                <h3>Home</h3>
               </div>
             </div>
           </a>

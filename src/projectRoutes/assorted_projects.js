@@ -2,12 +2,22 @@ import React from 'react';
 import Trapezoid from '../components/trapezoid';
 import ProjectTrapezoid from '../components/projectTrapezoid';
 import arrow from '../assets/arrow.svg';
-import neon from './assortedProjectsImages/neon.png'
+import neon from './assortedProjectsImages/neon.png';
+import deep from './assortedProjectsImages/deep.png';
+import blender1 from './assortedProjectsImages/blender1.png';
+import blender2 from './assortedProjectsImages/blender2.png';
+import blender3 from './assortedProjectsImages/blender3.png';
+import blender4 from './assortedProjectsImages/blender4.png';
 import '../styles/components/all.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
 
 export default function Assorted_Projects() {
   return (
     <div className='assorted-projects-container'>
+      <a className='floatingHomeIcon' href='/'>
+        <FontAwesomeIcon icon={faHouse} />
+      </a>
       <a href='/robot'>
         <img className='left-arrow' src={arrow} alt='left-arrow' />
       </a>
@@ -15,40 +25,49 @@ export default function Assorted_Projects() {
         <img className='right-arrow' src={arrow} alt='right-arrow' />
       </a>
       <Trapezoid text='Assorted Projects' upper={true} />
-      <div className='guitar-grid'>
-        <p>
-          During the summer of 2019 I decided to make an electric guitar using
-          raw wood and epoxy. The wood is a salvaged live edge from the Santa
-          Cruz area. I cut it to fit in a mold, and poured colored epoxy into
-          the crevasses. Once cured it creates the beatiful river look as
-          pictured below. I then cut the piece to the classic telecaster design,
-          and routed the holes for the pickups, electronics, and neck slot. I
-          painted the guitar body in clear laquer to let the epoxy really shine.
-          It is a beautiful piece of art and took about three months to
-          complete,
-        </p>
+      <div className='assorted-projects-grid'>
         <img className='img1' src={neon} alt='guitar' />
-        <p className='p2'>
-          The most difficult part of this process was pouring the epoxy. With
-          little previous experience, I researched the best methods to produce
-          the flowing water look. The largest roadblock I encountered was heat.
-          Epoxy cures in an exothermic reaction, so it produces a lot of heat
-          and can burn or crack if not cooled properly, but also needs to be
-          warm to help pop its internal bubbles (I did not have a vaccum chamber
-          to remove bubbles). Add on the Los Angeles summer heat and it is a
-          recipe for disaster. In the end I was thrilled with how the river came
-          out.
-        </p>
-        <img className='img2' src={neon} alt='guitar' />
-        <img className='img3' src={neon} alt='guitar' />
-        <div className='last-grid-item'>
+        <div className='text1'>
+          <h1>LED Neon Sign</h1>
           <p>
-            Next I’m planning on making an epoxy acoustic guitar when I get the
-            opportunity. That presesnts a whole other set of challenges with how
-            thin it must be, but that’s half the fun of a project like this.
+            This “neon” sign is actually made up of LED strips with a silicone
+            layer on top to diffuse the light. To make this, I used a laser
+            cutter to create the backing out of acrylic, then I placed the LED
+            strips in and wired them together. The “Renderfarm” is the room at
+            Pixar where all the animations are rendered, and they have a
+            similarly designed neon sign at the entrance.
           </p>
-          <img className='img4' src={neon} alt='guitar' />
         </div>
+        <div className='text2'>
+          <h1>Deepfakes</h1>
+          <p className='p2'>
+            I like to dabble in the deepfake software DeepFaceLab. It uses
+            machine learning to create a model of a face to apply to another. In
+            the picture to the right I am creating a model of Tobey Maguire to
+            place on my own. Deepfakes are fascinating to me and I can’t help
+            but mess around with the technology.
+          </p>
+        </div>
+
+        <img className='img2' src={deep} alt='deepfake' />
+        <img className='img3' src={blender1} alt='guitar' />
+        <div className='text3'>
+          <h1>Blender Rendering</h1>
+          <p className='p3'>
+            Recently I dove into Blender, the free 3D rendering software to
+            create digital art and animation. I love creating space and nebula
+            themed art, and have been developing my texturing and modeling
+            skill. In fact, I designed and rendered the spinning nebula cube on
+            the splash page of my website. I’m used to engineering modeling
+            software like SolidWorks or Catia, so modeling for art purposes is a
+            bit of a shift for me.
+          </p>
+        </div>
+      </div>
+      <div className='last-item'>
+        <img className='img4' src={blender2} alt='guitar' />
+        <img className='img5' src={blender3} alt='guitar' />
+        <img className='img6' src={blender4} alt='guitar' />
       </div>
       <ProjectTrapezoid upper={false} />
     </div>

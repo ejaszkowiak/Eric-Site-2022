@@ -1,5 +1,8 @@
 @import '../abstracts/all.scss';
-
+.floatingHomeIcon {
+  position: absolute;
+  padding: 30px;
+}
 .left-arrow {
   position: fixed;
   left: 2%;

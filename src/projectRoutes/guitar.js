@@ -7,10 +7,15 @@ import guitar3 from './guitarImages/guitar3.JPG';
 import guitar4 from './guitarImages/guitar4.JPG';
 import arrow from '../assets/arrow.svg';
 import '../styles/components/all.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
 
 export default function Guitar() {
   return (
     <div className='guitar-container'>
+      <a className='floatingHomeIcon' href='/'>
+        <FontAwesomeIcon icon={faHouse} />
+      </a>
       <a href='/assorted_projects'>
         <img className='left-arrow' src={arrow} alt='left-arrow' />
       </a>
