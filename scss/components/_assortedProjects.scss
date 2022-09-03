@@ -8,6 +8,9 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: minmax(400px, auto-fit) minmax(400px, auto-fill);
+    @media screen and (max-width: $medium) {
+      grid-template-columns: auto;
+    }
     & h1 {
       font-size: 4.5em;
       padding-top: 50px;
@@ -15,6 +18,11 @@
       color: $text-dark;
       text-align: center;
       margin: auto;
+      @media screen and (max-width: $medium) {
+        font-size: 2.5em;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      }
     }
     & p {
       padding: 30px;
@@ -24,6 +32,10 @@
       color: $text-dark;
       height: auto;
       margin: auto;
+      @media screen and (max-width: $medium) {
+        font-size: 1.1em;
+        padding: 20px 60px;
+      }
     }
     & img {
       padding: 50px;
@@ -36,9 +48,41 @@
       object-fit: cover;
       width: 100%;
     }
+    & .photo-group-1 {
+      display: grid;
+      & .img3 {
+grid-column: 1;
+      grid-row: 1;
+      transform: translate(-20px, -60px) scale(1.0);
+      }
+      & .img4 {
+      grid-column: 1;
+      grid-row: 1;
+      transform: translate(70px, 40px) scale(.65);
+      }
+      
+    }
+    & .photo-group-2 {
+      display: grid;
+      & .img5 {
+grid-column: 1;
+      grid-row: 1;
+      transform: translate(-60px, -60px) scale(.80);
+      }
+      & .img6 {
+      grid-column: 1;
+      grid-row: 1;
+      transform: translate(70px, 50px) scale(.70);
+      }
+      
+    }
   }
 }
 .last-item {
+
+  @media screen and (max-width: $medium) {
+    display: none;
+  }
   max-width: 85vw;
   display: grid;
   margin: auto;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Trapezoid from '../components/trapezoid';
 import ProjectTrapezoid from '../components/projectTrapezoid';
 import arrow from '../assets/arrow.svg';
@@ -10,6 +10,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
 
 export default function Robot() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  //choose the screen size
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  // create an event listener
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+  });
+
+
   return (
     <div className='robot-container'>
       <a className='floatingHomeIcon' href='/'>
@@ -32,19 +49,38 @@ export default function Robot() {
           that signals the motors to stop when it encounters a gap. This is all
           coordinated through an Arduino UNO board.
         </p>
+      {isMobile ? (
+      <>
+        <img className='img2' src={robot2} alt='robot2' />
         <p className='p2'>
-          On the robot I contributed by designing the 3D printed chassis and
-          aiding with coding the arduino. I designed the chassis in SolidWorks
-          and 3D printed it myself. For the Arduino, I learned how to code in
-          the Arduino language, how to control electronic devices and fine tune
-          them to suit a particular environment. This project helped me gain an
-          insight into the challenges of enabling cars to drive autonomously and
-          how a controls background can help achieve that.
-        </p>
-        <div className='last-grid-item'>
-          <img className='img2' src={robot2} alt='robot2' />
+            On the robot I contributed by designing the 3D printed chassis and
+            aiding with coding the arduino. I designed the chassis in SolidWorks
+            and 3D printed it myself. For the Arduino, I learned how to code in
+            the Arduino language, how to control electronic devices and fine tune
+            them to suit a particular environment. This project helped me gain an
+            insight into the challenges of enabling cars to drive autonomously and
+            how a controls background can help achieve that.
+          </p>
           <img className='img3' src={robot3} alt='robot3' />
-        </div>
+      </>
+      ) : (
+        <>
+          <p className='p2'>
+            On the robot I contributed by designing the 3D printed chassis and
+            aiding with coding the arduino. I designed the chassis in SolidWorks
+            and 3D printed it myself. For the Arduino, I learned how to code in
+            the Arduino language, how to control electronic devices and fine tune
+            them to suit a particular environment. This project helped me gain an
+            insight into the challenges of enabling cars to drive autonomously and
+            how a controls background can help achieve that.
+          </p>
+          <div className='last-grid-item'>
+            <img className='img2' src={robot2} alt='robot2' />
+            <img className='img3' src={robot3} alt='robot3' />
+          </div>      
+        </>
+      )}
+        
       </div>
       <ProjectTrapezoid upper={false} />
     </div>

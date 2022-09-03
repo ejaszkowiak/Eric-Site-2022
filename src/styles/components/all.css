@@ -328,7 +328,8 @@ button:hover .button-text {
     grid-column: 1; }
     @media screen and (max-width: 500px) {
       .trap-container h1 {
-        font-size: 3em; } }
+        font-size: 3em;
+        text-align: center; } }
   .trap-container .homeIcon {
     font-size: 30px;
     color: #32867b;
@@ -554,7 +555,7 @@ button:hover .button-text {
   top: 50%; }
   @media screen and (max-width: 500px) {
     .left-arrow {
-      transform: scale(0.5);
+      transform: scale(0.4);
       left: 0%; } }
 
 .right-arrow {
@@ -564,7 +565,7 @@ button:hover .button-text {
   top: 50%; }
   @media screen and (max-width: 500px) {
     .right-arrow {
-      transform: rotate(180deg) scale(0.5);
+      transform: rotate(180deg) scale(0.4);
       right: 0%; } }
 
 .guitar-container .guitar-grid {
@@ -638,6 +639,10 @@ button:hover .button-text {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: minmax(400px, auto-fit) minmax(400px, auto-fill); }
+  @media screen and (max-width: 500px) {
+    .robot-container .robot-grid {
+      grid-template-columns: auto;
+      margin: auto; } }
   .robot-container .robot-grid p {
     padding: 30px;
     font-weight: 300;
@@ -646,6 +651,10 @@ button:hover .button-text {
     color: #000;
     height: auto;
     margin: auto; }
+    @media screen and (max-width: 500px) {
+      .robot-container .robot-grid p {
+        font-size: 1.1em;
+        padding: 20px 60px; } }
   .robot-container .robot-grid img {
     padding: 50px;
     width: 100%;
@@ -680,6 +689,9 @@ button:hover .button-text {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: minmax(400px, auto-fit) minmax(400px, auto-fill); }
+  @media screen and (max-width: 500px) {
+    .assorted-projects-container .assorted-projects-grid {
+      grid-template-columns: auto; } }
   .assorted-projects-container .assorted-projects-grid h1 {
     font-size: 4.5em;
     padding-top: 50px;
@@ -687,6 +699,11 @@ button:hover .button-text {
     color: #000;
     text-align: center;
     margin: auto; }
+    @media screen and (max-width: 500px) {
+      .assorted-projects-container .assorted-projects-grid h1 {
+        font-size: 2.5em;
+        padding-top: 20px;
+        padding-bottom: 20px; } }
   .assorted-projects-container .assorted-projects-grid p {
     padding: 30px;
     font-weight: 300;
@@ -695,6 +712,10 @@ button:hover .button-text {
     color: #000;
     height: auto;
     margin: auto; }
+    @media screen and (max-width: 500px) {
+      .assorted-projects-container .assorted-projects-grid p {
+        font-size: 1.1em;
+        padding: 20px 60px; } }
   .assorted-projects-container .assorted-projects-grid img {
     padding: 50px;
     width: 100%;
@@ -704,6 +725,26 @@ button:hover .button-text {
   .assorted-projects-container .assorted-projects-grid .img1 {
     object-fit: cover;
     width: 100%; }
+  .assorted-projects-container .assorted-projects-grid .photo-group-1 {
+    display: grid; }
+    .assorted-projects-container .assorted-projects-grid .photo-group-1 .img3 {
+      grid-column: 1;
+      grid-row: 1;
+      transform: translate(-20px, -60px) scale(1); }
+    .assorted-projects-container .assorted-projects-grid .photo-group-1 .img4 {
+      grid-column: 1;
+      grid-row: 1;
+      transform: translate(70px, 40px) scale(0.65); }
+  .assorted-projects-container .assorted-projects-grid .photo-group-2 {
+    display: grid; }
+    .assorted-projects-container .assorted-projects-grid .photo-group-2 .img5 {
+      grid-column: 1;
+      grid-row: 1;
+      transform: translate(-60px, -60px) scale(0.8); }
+    .assorted-projects-container .assorted-projects-grid .photo-group-2 .img6 {
+      grid-column: 1;
+      grid-row: 1;
+      transform: translate(70px, 50px) scale(0.7); }
 
 .last-item {
   max-width: 85vw;
@@ -712,6 +753,9 @@ button:hover .button-text {
   grid-template-columns: auto auto auto;
   padding-bottom: 100px;
   padding-top: 100px; }
+  @media screen and (max-width: 500px) {
+    .last-item {
+      display: none; } }
   .last-item .img4 {
     margin: auto;
     border-radius: 5em;
