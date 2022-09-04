@@ -22,7 +22,7 @@ export default function Home() {
         text='Test Engineering Intern in during summer 2022. Performed tests on electric vehicle prototype and diesel compactors. Designed Solar energy solutions for EV’s.
 
   Utilized Dewesoft and Ipetronik softwares to test pressure transducers, thermocouples, accelerometers, etc. Worked with Automotive CAN networks'
-        link='https://www.volvocars.com/us'
+        link='https://www.vcesvolvo.com/'
         reverse={false}
       />
       <ProjectCard

@@ -42,7 +42,7 @@ export default function ProjectCard(props) {
           >
             <p>{props.text}</p>
             <div className='button-container'>
-              <button href={props.link}>Learn more</button>
+              <a href={props.link}>Learn more</a>
             </div>
           </div>
         </>
@@ -67,7 +67,7 @@ export default function ProjectCard(props) {
           >
             <p>{props.text}</p>
             <div className='button-container'>
-              <button href={props.link}>Learn more</button>
+              <a href={props.link}>Learn more</a>
             </div>
           </div>
         </>
@@ -80,7 +80,7 @@ export default function ProjectCard(props) {
           >
             <p>{props.text}</p>
             <div className='button-container'>
-              <button href={props.link}>Learn more</button>
+              <a href={props.link}>Learn more</a>
             </div>
           </div>
           <div className='fancy-rectangle' />
