@@ -486,7 +486,7 @@ button:hover .button-text {
     width: 100%;
     height: 100%;
     justify-content: center; }
-    .project-card-container .button-container button {
+    .project-card-container .button-container a {
       left: 50%;
       transform: translateX(-50%);
       margin-top: 100px;
@@ -496,7 +496,7 @@ button:hover .button-text {
       border-radius: 20px;
       color: #efefef; }
       @media screen and (max-width: 500px) {
-        .project-card-container .button-container button {
+        .project-card-container .button-container a {
           margin-top: 0;
           font-size: 2em;
           padding: 5 10px; } }

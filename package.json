@@ -23,7 +23,7 @@
     "format": "npx prettier --write .",
     "build:css": "node-sass ./scss -o ./src/styles --output-style compressed",
     "dev:css": "npm run build:css && node-sass -rw ./scss -o ./src/styles",
-    "build": "react-scripts build",
+    "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
