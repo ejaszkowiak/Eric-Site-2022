@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/components/all.css';
 import EricTesseract from '../assets/EricTesseract.mp4';
-import EricTesseractGIF from '../assets/EricTesseract.gif';
+import EricTesseractGIF from '../assets/compressed-bg.gif';
+import resume from '../assets/Eric_Jaszkowiak_Resume.pdf'
 
 export default function Hero() {
   const [isMobile, setIsMobile] = useState(false);
@@ -43,7 +44,7 @@ export default function Hero() {
             <a href='/guitar'>Projects</a>
           </li>
           <li>
-            <a href='#resume'>R&eacute;sum&eacute;</a>
+            <a href={resume}>R&eacute;sum&eacute;</a>
           </li>
           <li>
             <a href='mailto:ejaszkowiak@gmail.com'>Contact</a>

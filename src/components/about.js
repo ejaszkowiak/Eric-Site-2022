@@ -3,7 +3,7 @@ import '../styles/components/all.css';
 import resume from '../assets/Eric_Jaszkowiak_Resume.pdf'
 export default function About() {
   return (
-    <div className='about-container'>
+    <div className='about-container' id="about">
       <div className='about-text'>
         <h1>About Me</h1>
         <div className='fancy-rectangle' />
