@@ -1,13 +1,38 @@
 {
   "files": {
-    "main.css": "/static/css/main.03a49612.css",
-    "main.js": "/static/js/main.e3f89f96.js",
+    "main.css": "/static/css/main.0a7a06fb.css",
+    "main.js": "/static/js/main.f7fa68e6.js",
     "static/js/787.70496790.chunk.js": "/static/js/787.70496790.chunk.js",
-    "static/media/WebMainPic.jpg": "/static/media/WebMainPic.e0d08fd5c1d5ef959152.jpg",
+    "static/media/compressed-bg.gif": "/static/media/compressed-bg.b9162933dd82d53192e1.gif",
+    "static/media/blender1.png": "/static/media/blender1.9021af9ea49368f164e7.png",
+    "static/media/deep.png": "/static/media/deep.ccd96fbad16040faccb7.png",
+    "static/media/guitar2.jpg": "/static/media/guitar2.b0993f15a89e8dfdbb8c.jpg",
+    "static/media/Volvo.png": "/static/media/Volvo.62b7db47a6a020193211.png",
+    "static/media/robot3.png": "/static/media/robot3.06e40b8f42c51aae6002.png",
+    "static/media/EricTesseract.mp4": "/static/media/EricTesseract.efa37f357cc6256b5584.mp4",
+    "static/media/robot1.png": "/static/media/robot1.a4de820583e581da531a.png",
+    "static/media/blender3.png": "/static/media/blender3.2e8f6bee4d59e5a2f7b2.png",
+    "static/media/blender4.png": "/static/media/blender4.ba7e5ddfbef86727009a.png",
+    "static/media/robot2.png": "/static/media/robot2.ca339115c7c71825a24d.png",
+    "static/media/IMG_0724.jpg": "/static/media/IMG_0724.1bae09584045d62e2be1.jpg",
+    "static/media/neon.png": "/static/media/neon.a7a8ff7704954af1f0ca.png",
+    "static/media/blender2.png": "/static/media/blender2.c7e5c6f0427fc175da5d.png",
+    "static/media/guitar1.JPG": "/static/media/guitar1.dd547f0710b1b9faa976.JPG",
+    "static/media/guitar3.JPG": "/static/media/guitar3.c23fcc86eea1ed6807f8.JPG",
+    "static/media/guitar4.JPG": "/static/media/guitar4.b53fae02b2cce51d39ab.JPG",
+    "static/media/still-bg-img.JPG": "/static/media/still-bg-img.351c1bcf0f70192d53e6.JPG",
+    "static/media/volvo-logo.png": "/static/media/volvo-logo.1556b5b6275bf4bf83be.png",
+    "static/media/Eric_Jaszkowiak_Resume.pdf": "/static/media/Eric_Jaszkowiak_Resume.90f3b5ce3dfa2d7c9d75.pdf",
+    "static/media/trapezoid2.png": "/static/media/trapezoid2.e33d198008a386a10bc4.png",
+    "static/media/joby-logo.png": "/static/media/joby-logo.6307ca33a2f64219c664.png",
     "index.html": "/index.html",
-    "main.03a49612.css.map": "/static/css/main.03a49612.css.map",
-    "main.e3f89f96.js.map": "/static/js/main.e3f89f96.js.map",
+    "static/media/arrow.svg": "/static/media/arrow.769be474e582ce5e67f63be49d9f0685.svg",
+    "main.0a7a06fb.css.map": "/static/css/main.0a7a06fb.css.map",
+    "main.f7fa68e6.js.map": "/static/js/main.f7fa68e6.js.map",
     "787.70496790.chunk.js.map": "/static/js/787.70496790.chunk.js.map"
   },
-  "entrypoints": ["static/css/main.03a49612.css", "static/js/main.e3f89f96.js"]
+  "entrypoints": [
+    "static/css/main.0a7a06fb.css",
+    "static/js/main.f7fa68e6.js"
+  ]
 }
