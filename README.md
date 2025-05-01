@@ -6,6 +6,8 @@ Eric's [new site](https://ericjaszkowiak.netlify.app)
 
 To get started, make sure you have [Node](https://nodejs.org/en/), clone the repo and `cd` into the repo.
 
+If you run `which node` and get `node not found` then you need to [install node here](https://nodejs.org/en). 
+
 `npm install` to install dependencies
 
 `npm run start` to start dev server at localhost:3000
@@ -15,3 +17,28 @@ To get started, make sure you have [Node](https://nodejs.org/en/), clone the rep
 And then you're off at the races 🐎
 
 Make lots of changes, fix lots of bugs
+
+## Notes for Eric
+The only files that matter are the `assets`, `scss` and `src` which are the images, styles and structure/fun things respectively.
+
+```
+.
+├── README.md
+├── assets              <-- Images
+├── build
+├── netlify.toml
+├── node_modules
+├── package-lock.json
+├── package.json
+├── public
+├── scss                <-- Styles
+├── src                 <-- Main Code
+│   ├── App.js
+│   ├── assets
+│   ├── components
+│   ├── index.js
+│   ├── projectRoutes
+│   ├── reportWebVitals.js
+│   └── styles          <-- Ignore this
+└── zombie_code.scss
+```
